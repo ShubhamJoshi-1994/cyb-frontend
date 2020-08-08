@@ -11,14 +11,18 @@ function ChartSection() {
     const balanceAmount = useSelector((state) => state.expenses_minus_other_expenses);
 
     useEffect(() => {
-        setCostToday(balanceAmount);
+        setTimeout(() => {
+            setCostToday(balanceAmount)
+        }, 3000);
     }, [balanceAmount])
 
     useEffect(() => {
         if(recoveryPeriod) {
             let value = (allExpensesSum*1.2)/recoveryPeriod;
-            console.log('tets2', value);
-            setCostAfterTenYears(value);
+            setTimeout(() => {
+                setTimeout(setCostAfterTenYears(value), 3000);
+            }, 3000);
+            
         }
     }, [recoveryPeriod, allExpensesSum])
 
@@ -43,7 +47,7 @@ function ChartSection() {
             options={{
                 title:{
                     display:true,
-                    text:'Average Rainfall per month',
+                    text:'',
                     fontSize:16
                 },
                 legend:{

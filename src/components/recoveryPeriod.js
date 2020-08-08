@@ -21,7 +21,7 @@ function RecoveryPeriod() {
                 <InfoCircleOutlined />
             </p>
             <Input
-                style={{ width: '300px' }}
+                className="recovery-input"
                 suffix="/month"
                 value={recoveryPeriod}
                 onChange={(e) => setRecoveryPeriod(e.target.value)}

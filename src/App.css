@@ -70,6 +70,7 @@
 .ch-section-contents {
     width: 90%;
     margin: auto;
+    max-width: 800px;
 }
 
 .form-input-field-label {
@@ -81,6 +82,9 @@
 @media only screen and (min-width: 426px) {
     .App {
         margin: 40px;
+    }
+    .recovery-input {
+        width: 300px
     }
 }
 
