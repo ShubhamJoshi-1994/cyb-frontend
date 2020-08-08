@@ -1,7 +1,7 @@
 import React from 'react';
+import 'antd/dist/antd.css';
 import './App.css';
 import CalculatorScreen from "./components/calculatorScreen";
-import 'antd/dist/antd.css';
 
 function App() {
   return (

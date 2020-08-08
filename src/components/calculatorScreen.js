@@ -1,6 +1,5 @@
 import React from 'react';
-import { Row, Col } from 'antd';
-import { Button } from 'antd';
+import { Row, Col, Space, Button } from 'antd';
 import Form from "./form";
 import RecoveryPeriod from "./recoveryPeriod";
 import Chart from "./chartSection";
@@ -17,16 +16,18 @@ function Calculator() {
                     <Form />
                 </Col>
                 <Col flex={3} className="chart-section">
-                    <div>
+                    <Space
+                        direction="vertical"
+                        size="large"
+                        className="ch-section-contents"
+                    >
                         <RecoveryPeriod />
-                    </div>
-                    <div className="chart">
-                        <Chart />
-                    </div>
-                    <div>
-                        <p>A serious with recovery lasting 12 months could put your finances down by $359000 today and by $467000 in 10 years</p>
-                        <Button type="primary">START COMPARING QUOTES</Button>
-                    </div>
+                        <div className="chart"><Chart /></div>
+                        <div className="get-quotes-section">
+                            <p>A serious with recovery lasting <span className="blue-text">12 months</span> could put your finances down by <span className="blue-text">$359000</span> today and by <span className="blue-text">$467000</span> in 10 years</p>
+                            <Button type="primary">START COMPARING QUOTES</Button>
+                        </div>
+                    </Space>
                 </Col>
             </Row>
         </>
