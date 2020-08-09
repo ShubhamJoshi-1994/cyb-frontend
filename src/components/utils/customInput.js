@@ -11,6 +11,7 @@ function CustomInput({label, bindedValue, suffix, onChangeCallback}) {
                 <InfoCircleOutlined />
             </p>
             <Input
+                prefix="$"
                 placeholder="$1000"
                 suffix={suffix}
                 value={bindedValue}
