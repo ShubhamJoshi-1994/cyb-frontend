@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, {useState, useEffect} from 'react';
 import { Input } from 'antd';
-import { InfoCircleOutlined } from '@ant-design/icons';
+import { InfoCircleOutlined, PlusCircleOutlined } from '@ant-design/icons';
 import { useDispatch } from 'react-redux'
 
 function RecoveryPeriod() {
@@ -17,7 +17,8 @@ function RecoveryPeriod() {
     return (
         <div className="recovery-period">
             <p className="form-input-field-label">
-                Recovery Period {" "}
+                <PlusCircleOutlined className='revovery-icon'/>
+                Recovery Period
                 <InfoCircleOutlined />
             </p>
             <Input

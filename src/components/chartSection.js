@@ -31,8 +31,8 @@ function ChartSection() {
         labels: ['Cost as of Today', 'Cost in 10 Years'],
         datasets: [
             {
-                label: 'Rainfall',
-                backgroundColor: 'rgba(75,192,192,1)',
+                label: 'Amount',
+                backgroundColor: '#1890ff',
                 borderColor: 'rgba(0,0,0,1)',
                 borderWidth: 2,
                 data: [costToday, costAfterTenYears]

@@ -52,6 +52,17 @@
     height: 300px;
 }
 
+.revovery-icon {
+    color: red;
+    margin-right: 10px;
+    font-size: 18px
+}
+
+.recovery-period .form-input-field-label {
+    display: flex;
+    align-items: center;
+}
+
 .recovery-period {
     display: flex;
     flex-direction: column;
